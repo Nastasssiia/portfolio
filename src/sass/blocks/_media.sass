@@ -1,0 +1,256 @@
+@media (max-width: 1200px)
+    .container 
+        max-width: 960px
+    .sidepanel
+        display: none
+    .about
+        &__wrapper
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+        &__skills
+            column-gap: 20px
+            grid-template: repeat(2, minmax(115px, auto))/ repeat(2,250px)  
+        &__skill 
+            column-gap: 15px
+            grid-template-columns: 40px 195px
+    .resume
+        &__wrapper
+            padding: 60px 25px 0 25px
+            column-gap: 65px
+    .arsenal
+        &__wrapper
+            grid-template-columns: repeat(3,270px)
+            row-gap: 20px
+            justify-content: space-around
+        &__retings
+            grid-template-columns: repeat(2,350px)
+            grid-template-rows: repeat(3,70px)
+            justify-content: space-around
+            
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 280px)
+            grid-auto-rows: 280px
+            justify-content: space-around
+            row-gap: 20px
+            .horizontal, .vertical
+                grid-row: unset
+                grid-column: unset
+    .contacts
+        &__wrapper
+            grid-template-columns: 300px 485px
+            justify-content: space-around
+        &__form
+            grid-template: 40px 150px 40px/repeat(2,220px)
+
+
+@media (max-width: 992px)
+    .container 
+        max-width: 720px
+    .hamburger
+        top: 30px
+        right: 10px
+    .title_fs48
+        font-size: 40px
+    .about
+        &__wrapper
+            grid-template-columns: 300px 380px
+        &__skills
+            grid-template-columns: 380px
+            grid-auto-rows: minmax(115px , auto)
+        &__skill
+            column-gap: 20px
+            grid-template-columns: 40px 320px
+    .title_fs36
+        font-size: 30px
+        line-height: 45px
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(2,315px)
+            padding-top: 50px
+            column-gap: 55px
+        &__item-body
+            width: 300px
+    .arsenal
+        &__wrapper
+            grid-template-columns: repeat(2,270px)
+            grid-template-rows: repeat(4,minmax(270px,auto))
+            justify-content: space-around
+        &__title
+            &::before
+                left: 45%
+    .portfolio
+        &__title
+            &::before
+                left: 46%
+    .contacts
+        &__wrapper
+            grid-template-columns:  485px
+            justify-content: center
+        &__photo
+            display: none
+            
+            
+            
+            
+        
+
+
+@media (max-width: 768px)
+    .container 
+        max-width: 540px
+    .title_fs48
+        font-size: 30px
+        line-height: 35px
+    .about
+        padding-top: 40px
+        &__photo
+            grid-row: unset
+        &__wrapper
+            grid-template-columns: 100%
+            grid-template-rows: 470px auto auto
+        &__skills
+            row-gap: 10px
+    .resume
+        padding-top: 40px
+        &__wrapper
+            padding: 40px 85px 0 85px
+            grid-template-columns: 370px
+            row-gap: 55px
+        &__item-body
+            width: 370px
+        &__title
+            &::before
+                left: 42%
+    .arsenal
+        padding-top: 80px
+        &__wrapper
+            grid-template-columns: repeat(2,270px)
+            grid-template-rows: repeat(4,minmax(270px,auto))
+            gap: 10px
+            padding-top: 40px
+        &__retings
+            margin-top: 80px
+            grid-template-columns: 350px
+            grid-template-rows: repeat(6,70px)
+        &__title
+            &::before
+                left: 42%
+    .portfolio
+        padding-top: 40px
+        &__wrapper
+            grid-template-columns: repeat(2, 260px)
+            grid-template-rows: 260px
+            grid-auto-rows: 260px
+        
+            gap: 10px
+        &__title
+            &::before
+                left: 43%
+
+       
+
+    
+        
+
+
+@media (max-width: 576px)
+    .container 
+        width: 100%
+        padding: 0 10px 0 10px
+        
+    .title_fs48
+        font-size: 28px
+    .title_fs36
+        font-size: 26px
+    .promo
+        background:  url('../img/mobile_bg.jpg') no-repeat 50% 50% / cover 
+        padding-top: 65px
+        h1
+            margin-top: 10px
+            span
+                background: rgba(176,126,76,0.9)
+        &__subtitle
+            text-shadow: 1px 1px 2px black
+
+        &__link
+            margin-top: 310px
+    .hamburger
+        span 
+            top: 30px
+            background: black
+    .menu
+        &__block
+            width: 250px
+            padding-left: 20px
+        &__link
+            font-size: 22px
+    .about
+        &__wrapper
+            grid-template-rows: 400px auto auto
+        &__skills
+            grid-template-columns: 1fr
+        &__skill
+            grid-template-columns: 40px 228px  
+    .resume
+        &__wrapper
+            grid-template-columns: 100%
+            padding: 40px 0 0 10px
+        &__item-body
+            width: 290px
+        &__title
+            &::before
+                left: 40%
+    .arsenal
+        &__wrapper
+            padding-top: 20px
+            grid-template-columns: 270px
+        &__retings
+            grid-template-columns: 300px
+            &-line
+                width: 300px
+    .portfolio
+        &__wrapper
+            grid-template-columns:  280px
+        
+        &__title
+            &::before
+                left: 41%
+    .contacts
+        padding: 40px 0 40px 0
+        &__wrapper
+            grid-template-columns:  280px
+            padding: 0 35px 0 35px
+        &__form
+            grid-template: 45px 45px 190px minmax(45px, auto) / 280px
+        &__textarea 
+            grid-column: unset
+            width: 100%
+        
+        &__triggers 
+            grid-column: unset
+            grid-template-columns: 1fr
+            column-gap: unset
+            row-gap: 20px
+        
+        &__button
+            max-width: 220px
+            margin: 0 auto
+        
+        &__policy
+            width: 180px
+            margin: 0 auto
+            line-height: 18px
+            
+            
+
+        
+
+     
+   
+        
+        
+        
+    
+    
+        

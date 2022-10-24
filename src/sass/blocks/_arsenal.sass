@@ -1,0 +1,73 @@
+.arsenal
+    padding-top: 120px
+    &__title
+        text-align: center
+        position: relative
+        @include before_circle
+        &:before
+            left: 46%
+    &__subtitle
+        text-align: center
+    &__wrapper
+        padding:  60px 11px 0 11px
+        display: grid
+        grid-template-columns: repeat(4, 270px)
+        grid-template-rows: repeat(2, minmax(270px, auto))
+        gap: 13px
+        grid-auto-rows:  minmax(270px, auto)
+        grid-auto-columns: 270px
+        
+        
+    &__item
+        display: grid
+        grid-template-rows:  62px 21px minmax(94px , auto)
+        row-gap: 20px
+        padding: 30px 30px 25px 30px
+        border: 1px solid $main-color
+        
+        &-descr
+            font-weight: 700
+            font-size: 14px
+            line-height: 21px
+        &-text
+            font-weight: 500
+            font-size: 12px  
+            line-height: 18px
+    
+    &__retings
+        margin-top: 120px
+        display: grid
+        grid-template-columns: repeat(3, 350px)
+        grid-template-rows: repeat(2, 70px)
+        gap: 45px
+        grid-auto-rows:   70px
+        grid-auto-columns: 350px
+        &-item 
+            display: grid
+            grid-template: minmax(21px, auto)  / 200px 35px
+            justify-content: space-between
+            align-content: space-between
+
+        &-title 
+            position: relative
+            padding-left: 17px
+            @include before_circle
+            &::before
+                top: -35%
+        &-counter
+            font-weight: 500
+            font-size: 14px
+            line-height: 21px
+        &-line 
+            width: 350px
+            height: 14px
+            background: $main-color
+            border-radius: 4px
+            span
+                display: block
+                height: 100%
+                background: $sub-color
+                border-radius: 4px
+                
+
+       

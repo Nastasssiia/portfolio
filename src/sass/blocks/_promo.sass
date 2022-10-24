@@ -1,0 +1,50 @@
+.promo
+    min-height: 100vh
+    position: relative
+    background: url('../img/main_bg.jpg') no-repeat 50% / cover
+    padding-top: 205px
+    &__subtitle
+        position: relative
+        z-index: 2
+        padding-left: 10px
+        @include before_circle
+        
+    &__btns
+        margin-top: 25px
+        display: flex
+        width: 250px
+        justify-content: space-between
+        align-items: center
+
+    &__link
+        color: $sub-color
+        font-weight: 700
+        transition-duration: 0.5s
+        &:hover
+            color: $sub-color
+            text-decoration: none
+            transform: scale(1.1)
+.hamburger
+    position: fixed
+    top: 60px
+    right: 30px
+    height: 26px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: space-between
+    cursor: pointer
+    transition: all 0.5s
+    &:hover
+        transform: scale(1.1)
+        span
+            background: $sub-color
+    span
+        display: block
+        width: 40px
+        height: 4px
+        background: $main-color   
+            
+    span.long
+        width: 46px
+            

@@ -1,0 +1,32 @@
+.sidepanel
+    position: fixed
+    top: 150px
+    right: 30px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 340px
+    z-index: 3
+    &__link
+        transform: rotate(180deg)
+        transition-duration: 0.5s
+        &:hover 
+            transform: rotate(180deg) scale(1.5)
+    &__divider
+        width: 2px
+        height: 70px
+        background: $main-color
+        
+    &__text
+        color: $sub-color
+        height: 150px
+        width: 25px
+        font-weight: 700
+        span
+            display: block
+            width: 150px
+            transform: rotate(90deg) translate(40%,260%)
+        
+
+    
